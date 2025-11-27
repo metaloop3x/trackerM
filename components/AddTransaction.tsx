@@ -75,10 +75,14 @@ const AddTransaction: React.FC<AddTransactionProps> = ({ initialData, imagePrevi
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {imagePreview && (
-          <div className="w-full h-48 rounded-xl overflow-hidden relative border border-white/20">
-             <img src={imagePreview} alt="Receipt" className="w-full h-full object-cover" />
-             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                <span className="text-white text-sm font-medium">Scanned Receipt</span>
+          <div className="w-full rounded-xl overflow-hidden relative border border-white/20 bg-black/20">
+             <div className="h-48">
+                 <img src={imagePreview} alt="Receipt" className="w-full h-full object-cover opacity-80" />
+             </div>
+             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-3 pt-8">
+                <span className="text-blue-300 text-xs font-medium flex items-center gap-1">
+                    Analysis complete. Image will be discarded upon save.
+                </span>
              </div>
           </div>
         )}
