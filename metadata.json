@@ -1,0 +1,8 @@
+{
+  "name": "SnapTrack",
+  "description": "A minimalist, Apple-liquid-glass aesthetic personal finance tracker. Features AI-powered bill scanning, expense categorization, and strict local privacy.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
